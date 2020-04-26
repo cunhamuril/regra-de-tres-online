@@ -12,6 +12,11 @@ function App() {
         height="99vh"
         style={{ position: "fixed", zIndex: 0 }}
         params={{
+          particles: {
+            number: {
+              value: 65,
+            },
+          },
           interactivity: {
             events: {
               onhover: {

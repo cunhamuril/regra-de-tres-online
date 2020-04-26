@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import media from "styled-media-query";
 import { tada } from "react-animations";
 
 import { colors } from "../../theme";
@@ -20,11 +21,11 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
 
   width: 100%;
-  height: 300px;
-  max-width: 400px;
+  height: 500px;
+  padding: 30px 10px;
+  max-width: 600px;
   border-radius: 4px;
 
   background-color: ${colors.primaryLight}DE;
@@ -34,16 +35,31 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
 
+    margin-bottom: 60px;
+
     color: ${colors.primary};
 
     h4 {
-      margin-left: 4px;
+      margin-left: 12px;
     }
   }
 
   #result {
+    margin-top: 20px;
     font-weight: 500;
     color: ${colors.primaryDark};
     animation: 1s ${tadaAnimation};
   }
+
+  ${media.lessThan("small")`
+    height: 400px;
+    
+    #title {
+      margin-bottom: 40px;
+    }
+
+    #result {
+      margin-top: 40px;
+    }
+  `}
 `;
