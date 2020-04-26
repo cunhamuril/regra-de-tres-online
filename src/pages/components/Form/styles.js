@@ -10,7 +10,7 @@ export const Container = styled.form`
     margin-bottom: 10px;
 
     input {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 0 4px;
 
       border: 0;
@@ -29,7 +29,7 @@ export const Container = styled.form`
       }
 
       ${media.lessThan("small")`    
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         max-width: 40px;
       `}
     }
