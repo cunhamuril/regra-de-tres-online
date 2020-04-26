@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Particles
+      {/* <Particles
         height="99vh"
         style={{ position: "fixed", zIndex: 0 }}
         params={{
@@ -20,7 +20,7 @@ function App() {
               },
             },
           },
-        }}
+        }} */}
       />
       <Main />
     </>

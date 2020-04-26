@@ -2,22 +2,22 @@ import React from "react";
 
 import { Container } from "./styles";
 
-const Form = ({ onSubmit }) => (
-  <Container onSubmit={onSubmit}>
+const Form = ({ onSubmit, onReset }) => (
+  <Container onSubmit={onSubmit} onReset={onReset}>
     <div className="form-group">
-      <label htmlFor="value-a">O valor de </label>
-      <input type="number" placeholder="A" name="value-a" />
-      <label htmlFor="value-a"> Está para </label>
-      <input type="number" placeholder="B" name="value-b" />
+      <label htmlFor="valueA">O valor de </label>
+      <input type="number" placeholder="A" name="valueA" />
+      <label htmlFor="valueB"> Está para </label>
+      <input type="number" placeholder="B" name="valueB" />
     </div>
 
     <p>Assim como</p>
 
     <div className="form-group">
-      <label htmlFor="value-y">O valor de </label>
-      <input type="number" placeholder="Y" name="value-a" />
-      <label htmlFor="value-a"> Está para </label>
-      <input type="number" placeholder="X" name="value-x" disabled="true" />
+      <label htmlFor="valueY">O valor de </label>
+      <input type="number" placeholder="Y" name="valueY" />
+      <label htmlFor="valueX"> Está para </label>
+      <input type="number" placeholder="X" name="valueX" disabled={true} />
     </div>
 
     <div className="button-group">
