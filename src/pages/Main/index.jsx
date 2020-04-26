@@ -1,6 +1,8 @@
 import React from "react";
 import { CalculatorFilled } from "@ant-design/icons";
 
+import Form from "../components/Form";
+
 import { Container, Card } from "./styles";
 
 const Main = () => {
@@ -16,33 +18,7 @@ const Main = () => {
           <h4>Regra de Três</h4>
         </span>
 
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="value-a">O valor de </label>
-            <input type="number" placeholder="A" name="value-a" />
-            <label htmlFor="value-a"> Está para </label>
-            <input type="number" placeholder="B" name="value-b" />
-          </div>
-
-          <p>Assim como</p>
-
-          <div className="form-group">
-            <label htmlFor="value-y">O valor de </label>
-            <input type="number" placeholder="Y" name="value-a" />
-            <label htmlFor="value-a"> Está para </label>
-            <input
-              type="number"
-              placeholder="X"
-              name="value-x"
-              disabled="true"
-            />
-          </div>
-
-          <div className="button-group">
-            <button type="submit">Calcular</button>
-            <button type="reset">Limpar</button>
-          </div>
-        </form>
+        <Form onSubmit={handleSubmit} />
 
         <h2 id="result">250</h2>
       </Card>
