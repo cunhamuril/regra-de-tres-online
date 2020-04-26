@@ -8,14 +8,10 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Particles
+      {/* <Particles
         height="99vh"
+        style={{ position: "fixed", zIndex: 0 }}
         params={{
-          particles: {
-            number: {
-              value: 50,
-            },
-          },
           interactivity: {
             events: {
               onhover: {
@@ -25,7 +21,7 @@ function App() {
             },
           },
         }}
-      />
+      /> */}
       <Main />
     </>
   );
