@@ -15,7 +15,7 @@ const Main = () => {
     const B = +e.target.valueB.value;
     const Y = +e.target.valueY.value;
 
-    setResult("X = " + (B * Y) / A);
+    setResult((B * Y) / A);
   };
 
   const handleReset = (e) => {
@@ -37,7 +37,11 @@ const Main = () => {
 
         <Form onSubmit={handleSubmit} onReset={handleReset} />
 
-        <h2 id="result">{result}</h2>
+        {result && (
+          <h2 id="result">
+            X = <strong>{result}</strong>
+          </h2>
+        )}
       </Card>
     </Container>
   );

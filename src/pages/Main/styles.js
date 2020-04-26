@@ -1,6 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { tada } from "react-animations";
 
 import { colors } from "../../theme";
+
+const tadaAnimation = keyframes`${tada}`;
 
 export const Container = styled.div`
   padding: 0 20px;
@@ -41,5 +44,6 @@ export const Card = styled.div`
   #result {
     font-weight: 500;
     color: ${colors.primaryDark};
+    animation: 1s ${tadaAnimation};
   }
 `;
