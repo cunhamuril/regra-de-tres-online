@@ -6,18 +6,18 @@ const Form = ({ onSubmit, onReset }) => (
   <Container onSubmit={onSubmit} onReset={onReset}>
     <div className="form-group">
       <label htmlFor="valueA">O valor de </label>
-      <input type="number" placeholder="A" name="valueA" />
+      <input required type="number" placeholder="A" name="valueA" />
       <label htmlFor="valueB"> Está para </label>
-      <input type="number" placeholder="B" name="valueB" />
+      <input required type="number" placeholder="B" name="valueB" />
     </div>
 
     <p>Assim como</p>
 
     <div className="form-group">
       <label htmlFor="valueY">O valor de </label>
-      <input type="number" placeholder="Y" name="valueY" />
+      <input required type="number" placeholder="Y" name="valueY" />
       <label htmlFor="valueX"> Está para </label>
-      <input type="number" placeholder="X" name="valueX" disabled={true} />
+      <input type="number" placeholder="X" name="valueX" disabled />
     </div>
 
     <div className="button-group">
